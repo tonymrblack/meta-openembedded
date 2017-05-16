@@ -6,18 +6,18 @@ SECTION = "net"
 
 DEPENDS = "zlib curl"
 
-SRC_URI = "https://github.com/maxmind/geoipupdate/releases/download/v2.2.2/geoipupdate-2.2.2.tar.gz \
+SRC_URI = "https://github.com/maxmind/geoipupdate/releases/download/v${PV}/geoipupdate-${PV}.tar.gz \
            file://GeoIP.conf \
            file://geoipupdate.cron \
           "
 
-SRC_URI[md5sum] = "06284bd7bcb298d078d794eb630dae55"
-SRC_URI[sha256sum] = "156ab7604255a9c62c4a442c76d48d024ac813c6542639bffa93b28e2a781621"
+SRC_URI[md5sum] = "94de6553bc213703ae07542089c280bc"
+SRC_URI[sha256sum] = "4f71e911774c4fd32e217889c242d2c311fa5ffd3df56be48a2d1aedfe2e671c"
 
 LICENSE = "GPLv2"
 
 LIC_FILES_CHKSUM = "\
-file://ChangeLog.md;md5=8ebf6f27a39125c3d600c90914b4034a \
+file://ChangeLog.md;md5=ca457cc1427b57972707b741adb7fe1d \
 "
 
 inherit autotools
