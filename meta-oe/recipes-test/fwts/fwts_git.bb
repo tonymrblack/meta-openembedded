@@ -5,9 +5,9 @@ HOMEPAGE = "https://wiki.ubuntu.com/Kernel/Reference/fwts"
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://src/main.c;beginline=1;endline=16;md5=31da590f3e9f3bd34dcdb9e4db568519"
 
-PV = "17.03.00"
+PV = "17.03.00+git${SRCPV}"
 
-SRCREV = "e3e9d1442b4cc70f5b30199f584cec8e25aeaad4"
+SRCREV = "0153ea51cb648b3067a1b327eee6a075b6cfa330"
 SRC_URI = "git://kernel.ubuntu.com/hwe/fwts.git \
            file://0001-ignore-constant-logical-operand-warning-with-clang.patch \
            "
